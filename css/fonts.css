@@ -1,0 +1,20 @@
+.header-list-item-link {
+  text-decoration: none;
+  color: #000;
+  font-family: "MotivaSans";
+  display: inline-block;
+  line-height: 2;
+}
+
+.header-list-item-link:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #000;
+  transition: width 0.4s ease-in-out;
+}
+
+.header-list-item-link:hover:after, .header-list-item-link:focus:after {
+  width: 100%;
+}
